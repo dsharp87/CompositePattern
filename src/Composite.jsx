@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React, { useState } from "react";
 import { BasicComponent } from './BasicComponent'
-import { ItemGroup } from './ItemGroup';
+import { ComponentGroup } from './ComponentGroup';
 
 
 const Composite = (props) => {
@@ -22,8 +22,8 @@ const Composite = (props) => {
     return (
         <Box sx={{ width: 900, p: 5, border: '1px solid black' }}>
             <Typography variant="h3">Composite worth total of {scoreValue} points</Typography>
-            <ItemGroup key={1} id={1} calculateScore={calculateScore}/>
-            <ItemGroup key={2} id={2} calculateScore={calculateScore}/>
+            <ComponentGroup key={1} id={1} calculateScore={calculateScore} />
+            <ComponentGroup key={2} id={2} calculateScore={calculateScore} />
             <BasicComponent key={3} id={3} calculateScore={calculateScore} />
             <BasicComponent key={4} id={4} calculateScore={calculateScore} />
         </Box>

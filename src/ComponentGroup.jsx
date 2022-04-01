@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { BasicComponent } from './BasicComponent'
 
 
-const ItemGroup = (props) => {
+const ComponentGroup = (props) => {
     debugger;
     const [childScoreValues, setchildScoreValues] = useState({1:0, 2:0, 3:0});
     const [totalChildScoreValue, setTotalChildScoreValue] = useState(0);
@@ -41,4 +41,4 @@ const ItemGroup = (props) => {
     )
 }
 
-export { ItemGroup };
+export { ComponentGroup };
